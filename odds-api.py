@@ -77,7 +77,7 @@ reshaped_odds = df['outcome_price'].values.reshape(-1, 3)
 df = df.drop(columns=['outcome_name', 'outcome_price'],axis=1)
 
 
-# Drop duplicate rows (optional)
+# Drop duplicate rows
 df = df.drop_duplicates()
 
 
