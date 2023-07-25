@@ -63,11 +63,11 @@ if all(isinstance(item, dict) for item in odds_data) :
                         'outcome_price': outcome['price']
                     }
 
-                    # Append the current row dictionary to the rows_list
+                    # Append the current row dictionary to the data_list
                     data_lists.append(row)
 
 
-# Create a pandas DataFrame from the rows_list
+# Create a pandas DataFrame from the data_list
 df = pd.DataFrame(data_lists)
 
 # Use the numpy reshape function to create separate columns for each outcome
